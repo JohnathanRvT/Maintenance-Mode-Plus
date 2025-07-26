@@ -26,8 +26,12 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-// For now, we only need the admin page class
+// Load the class that adds the admin settings page
 if (is_admin()) {
     require_once plugin_dir_path(__FILE__) . 'admin/class-admin-page.php';
     new JRVT_Admin_Page();
 }
+
+// Load the class that handles the core maintenance mode logic
+require_once plugin_dir_path(__FILE__) . 'includes/class-maintenance-mode.php';
+JRVT_Maintenance_Mode::init();
