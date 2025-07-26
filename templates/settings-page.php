@@ -1,10 +1,16 @@
 <div class="wrap">
-    <h1>JRVT Plugin Settings</h1>
+    <h1>Maintenance Mode Plus Settings</h1>
+    
     <form method="post" action="options.php">
         <?php
-        // settings_fields('jrvt_options_group');
-        // do_settings_sections('jrvt_plugin');
-        // submit_button();
+        // Renders the necessary security fields (nonce, action, etc.)
+        settings_fields('mmp_settings_group');
+        
+        // Renders the settings sections and their fields
+        do_settings_sections('maintenance-mode-plus-settings');
+        
+        // Renders the default "Save Changes" button
+        submit_button();
         ?>
     </form>
 </div>
