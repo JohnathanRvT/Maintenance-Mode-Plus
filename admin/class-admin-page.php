@@ -6,18 +6,17 @@ class JRVT_Admin_Page {
 
     public function add_menu() {
         add_menu_page(
-            'JRVT Settings',
-            'JRVT Plugin',
-            'manage_options',
-            'jrvt-plugin',
-            [$this, 'settings_page'],
-            'dashicons-admin-generic'
+            'Maintenance Plus Settings',      // Page Title
+            'Maintenance Plus',               // Menu Title
+            'manage_options',                 // Capability
+            'maintenance-mode-plus-settings', // Menu Slug
+            [$this, 'settings_page_html'],    // Callback
+            'dashicons-hourglass'             // Icon
         );
     }
 
-    public function settings_page() {
-        echo '<h1>JRVT Plugin Settings</h1>';
+    public function settings_page_html() {
+        // We will use the settings template file
+        require_once plugin_dir_path(__FILE__) . '../templates/settings-page.php';
     }
 }
-
-new JRVT_Admin_Page();
