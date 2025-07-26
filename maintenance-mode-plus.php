@@ -3,7 +3,7 @@
  * Plugin Name: Maintenance Mode Plus
  * Plugin URI: https://jrvt.co.za/plugins/maintenance-mode-plus
  * Description: Replaces the default WP maintenance page with a beautiful, customizable "Coming Soon" or "Under Maintenance" screen.
- * Version: 0.1.0
+ * Version: 0.2.0
  * Author: Johnathan Van Tonder (JRVT Pty Ltd)
  * Author URI: https://jrvt.co.za/
  * Developer: Johnathan Van Tonder

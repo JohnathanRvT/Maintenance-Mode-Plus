@@ -5,7 +5,7 @@ Tags: maintenance, coming soon, maintenance mode, landing page, splash page
 Requires at least: 6.0
 Tested up to: 6.5
 Requires PHP: 7.4
-Stable tag: 0.1.0
+Stable tag: 0.2.0
 License: GPLv3 or Commercial
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -37,6 +37,11 @@ Yes, under the GPL v3 license. For commercial use (client work, SaaS, etc.), a l
 Support is provided via https://jrvt.co.za/support or directly via email at info@jrvt.co.za.
 
 == Changelog ==
+
+= 0.2.0 =
+* FEATURE: Added an on/off switch to enable or disable maintenance mode.
+* FEATURE: Implemented core logic to show a basic maintenance page to non-admins.
+* Sends a 503 "Service Unavailable" header for SEO-friendliness.
 
 = 0.1.0 =
 * Initial project setup from boilerplate.
